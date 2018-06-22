@@ -1,0 +1,18 @@
+{
+	"URL": {
+		"baseURL": "https://jsonplaceholder.typicode.com",
+		"path":"/comments"
+		
+	},
+	"Data":{
+	"postId":"40"
+	},
+	"ExpectedResults": {
+		"commentsSize": "5",
+		"commentId":"199",
+		"commentPostId":"40",
+		"commentName":"pariatur aspernatur nam atque quis",
+		"commentEmail":"Cooper_Boehm@damian.biz",
+		"commentBody":"veniam eos ab voluptatem in fugiat ipsam quis\nofficiis non qui\nquia ut id voluptates et a molestiae commodi quam\ndolorem enim soluta impedit autem nulla"
+	}
+}
