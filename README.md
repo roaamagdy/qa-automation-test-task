@@ -1,34 +1,34 @@
-# qa-automation-test-task
+Project Details:
 
-In this repository you can find a test task for Billie Automation QA.
-First of all we will take a look at the quality of your job, but do not spend too much time on this task, 2-3 hours would be enough.
+Project Description: A Test Automation Project to automate some tests for webservice using Rest assured, java-TestNG framework and maven repository
 
-## Acceptance criteria
+Prerequisites:
 
-Fork this repository and push your solution into a fork. After it you only need to provide us a link to your repository with solution.
+1.	Java 
+2.	JDK 1.7 or higher version
+3.	Maven 
+4.	Eclipse IDE
+ 
+Installation:
 
-## Preferable stack of technologies
+1.	Import the project as maven 
+2.	Right click on project and click update project and select force update to download the missing jars included in the project 
+3.	You may need to update “JDK” used in eclipse to be “1.7 or higher”
 
-- Programming language: Java
-- Build tool: Maven or Gradle
+Project Breakdown: 
 
-As a big plus would be considered usage of:
+Project is divided into 3 Packages:
+1.	com.billie.api.model:  Contains needed models
+a.	CommentModel-> Contains all elements related to comment data (id, postId, name email,body)
 
-- TestNG
-- REST Assured
-- User-friendly assertion messages
+2.	com.billie.api.test: Contains all implemented tests:
+a.	CommentsTest: Contains test cases covered to verify the required cases 
 
-Nevertheless, do not hesitate to use technologies you are the most familiar with.
+3.	com.billie.api.util: This package contains helper classes 
+a.	DataReader: Used to construct Json object with data saved in json file
 
-## Task
+To run the Tests, Use one of the following:
 
-1. Make GET request to https://jsonplaceholder.typicode.com/comments
-2. Make sure that post with id 40 contains 5 comments
-3. Make sure that post with id 40 contains the following comment:
-
-```
-id: 199
-name: pariatur aspernatur nam atque quis
-email: Cooper_Boehm@damian.biz
-body: veniam eos ab voluptatem in fugiat ipsam quis\nofficiis non qui\nquia ut id voluptates et a molestiae commodi quam\ndolorem enim soluta impedit autem nulla
-```
+1.	Run testng.xml
+2.	Run project as “Maven” test 
+3.	Run test class directly as “TestNG Test”: com.billie.api.test.CommentsTest
